@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Instrument MIDI Generator with SoundFont</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 700px; margin: auto; }
+        input, button, textarea { padding: 10px; margin-top: 10px; width: 100%; }
+        h1 { margin-bottom: 20px; }
+        label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Multi-Instrument MIDI Generator</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="bass">Bass Notes (e.g. 40, 43, 45):</label><br>
+        <input type="text" id="bass" name="bass"><br>
+
+        <label for="drums">Drum Notes (e.g. 35, 38, 42 for Kick, Snare, Hi-Hat):</label><br>
+        <input type="text" id="drums" name="drums"><br>
+
+        <label for="guitar">Guitar Notes:</label><br>
+        <input type="text" id="guitar" name="guitar"><br>
+
+        <label for="leads">Lead Notes:</label><br>
+        <input type="text" id="leads" name="leads"><br>
+
+        <label for="chords">Chord Notes:</label><br>
+        <input type="text" id="chords" name="chords"><br>
+
+        <label for="soundfont">Optional SoundFont (.sf2) Upload:</label><br>
+        <input type="file" id="soundfont" name="soundfont" accept=".sf2"><br>
+
+        <button type="submit">Generate MIDI</button>
+    </form>
+</body>
+</html>
