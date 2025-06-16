@@ -1,0 +1,4 @@
+Flask
+mido
+python-rtmidi
+pyfluidsynth
